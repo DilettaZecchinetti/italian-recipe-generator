@@ -3,49 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Italian Recipe Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="What do you fancy eating?"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The recipe
-        <br />
-        will go here
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/DilettaZecchinetti" target="_blank"
-        >Diletta Zecchinetti</a
-      >
-      and is open-sourced
-      <a
-        href="https://github.com/DilettaZecchinetti/italian-recipe-generator"
-        target="_blank"
-        >on Github</a
-      >
-      and is hosted
-      <a
-        href="https://ai-italian-recipe-generator.netlify.app/"
-        target="_blank"
-      >
-        on Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Italian Recipe Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="What do you fancy eating?"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe-container">
+          <div class="ingredients">The recipe</div>
+          <div class="recipe">will go here</div>
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/DilettaZecchinetti" target="_blank"
+          >Diletta Zecchinetti</a
+        >
+        and is open-sourced
+        <a
+          href="https://github.com/DilettaZecchinetti/italian-recipe-generator"
+          target="_blank"
+          >on Github</a
+        >
+        and is hosted
+        <a
+          href="https://ai-italian-recipe-generator.netlify.app/"
+          target="_blank"
+        >
+          on Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

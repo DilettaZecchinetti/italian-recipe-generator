@@ -1,8 +1,8 @@
 body {
   margin-bottom: 30px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/780/original/Presentation_Template_%2810%29.png?1718968705");
-  background-size: cover;
 
+  background-repeat: repeat;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -68,6 +68,10 @@ form {
   font-size: 15px;
 }
 
+.recipe strong {
+  text-align: center;
+  font-weight: 25px;
+}
 footer {
   text-align: center;
   font-size: 12px;

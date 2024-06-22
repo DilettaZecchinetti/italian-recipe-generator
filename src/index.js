@@ -15,8 +15,12 @@ function generateRecipe(event) {
   let apiKey = "dbo60f7a4472d0ade271b940ftf815f3";
   let context =
     "You are an Italian chef and love to create easy and simple authentic Italian recipes. Your mission is to create a very simple and tasty recipe in basic HTML. Make sure to follow the user instructions";
-  let prompt = `User instructions: generate an Italian recipe that contains ${instructionsInput.value}. First of all you have to show the name of the recipe. Then you have to list all the ingredients for the recipe first followed by the recipe instructions. At the end always say  <strong>Buon Appetito!</strong>`;
+  let prompt = `User instructions: generate an Italian recipe that contains ${instructionsInput.value}. First of all you have to show the name of the recipe. Then you have to list all the ingredients for the recipe first followed by the recipe instructions.`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="blink">⏳ Generating a tasty and easy Italian recipe just for you..</div>`;
 
   console.log("Generating recipe");
   console.log(`Prompt: ${prompt}`);

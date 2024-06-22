@@ -12,16 +12,18 @@
     <div class="container">
       <header>
         <h1>Italian AI-Powered Recipe Generator</h1>
+
+        <div class="chef">Unleash your inner chef 🫵</div>
         <div class="description">
-          Simply enter some ingredients into our recipe engine and we'll
-          instantly generate a recipe for you to enjoy!
+          Simply enter some ingredients below and we'll instantly generate a
+          recipe for you to enjoy!
         </div>
       </header>
       <main>
         <form id="recipe-form-generator">
           <input
             type="text"
-            placeholder="Unleash your inner chef!"
+            placeholder="i.e: Mozzarella, Basil, Tomatoes "
             autofocus
             required
             autocomplete="off"
@@ -30,8 +32,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-
-        <div class="recipe" id="recipe"></div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by

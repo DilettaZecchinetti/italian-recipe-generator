@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI Italian Recipe Generator</h1>
+        <h1>Italian AI-Powered Recipe Generator</h1>
+        <div class="description">
+          Simply enter some ingredients into our recipe engine and we'll
+          instantly generate a recipe for you to enjoy!
+        </div>
       </header>
       <main>
-        <form>
+        <form id="recipe-form-generator">
           <input
             type="text"
-            placeholder="What do you fancy eating?"
+            placeholder="Unleash your inner chef!"
             autofocus
             required
             autocomplete="off"
@@ -24,10 +28,8 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe-container">
-          <div class="ingredients">The recipe</div>
-          <div class="recipe">will go here</div>
-        </div>
+
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
